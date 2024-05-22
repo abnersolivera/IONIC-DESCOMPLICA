@@ -5,6 +5,14 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'listar',
+    loadChildren: () => import('./listar/listar.module').then( m => m.ListarPageModule)
+  },
+  {
+    path: 'gps',
+    loadChildren: () => import('./gps/gps.module').then( m => m.GpsPageModule)
   }
 ];
 @NgModule({
